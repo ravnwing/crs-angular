@@ -9,7 +9,6 @@ import {MatButtonModule, MatCheckboxModule, MatDatepickerModule, MatFormFieldMod
   MatInputModule, MatRadioModule, MatSelectModule, MatSliderModule, MatSlideToggleModule,
   MatToolbarModule, MatListModule, MatGridListModule, MatCardModule, MatIconModule,
   MatProgressSpinnerModule, MatDialogModule} from '@angular/material';
-import { RouterModule, Routes } from '@angular/router';
 
 
 import { AppComponent } from './app.component';
@@ -41,12 +40,7 @@ import { AppRoutingModule } from './app-routing/app-routing.module';
     MatInputModule, MatRadioModule, MatSelectModule, MatSliderModule, MatSlideToggleModule,
     MatToolbarModule, MatListModule, MatGridListModule, MatCardModule, MatIconModule,
     MatProgressSpinnerModule, MatDialogModule,
-    FlexLayoutModule,
-    RouterModule.forRoot([
-      { path: 'home',  component: HomeComponent },
-      { path: 'menu',     component: MenuComponent },
-      { path: '', redirectTo: '/home', pathMatch: 'full' }
-    ])
+    FlexLayoutModule, AppRoutingModule
   ],
   providers: [DishService],
   bootstrap: [AppComponent]
