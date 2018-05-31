@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { DishService } from './services/dish.service'
+import { DishService } from './services/dish.service';
+import { PromotionService } from './services/promotion.service';
 
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {FlexLayoutModule} from '@angular/flex-layout';
@@ -42,7 +43,7 @@ import { AppRoutingModule } from './app-routing/app-routing.module';
     MatProgressSpinnerModule, MatDialogModule,
     FlexLayoutModule, AppRoutingModule
   ],
-  providers: [DishService],
+  providers: [DishService, PromotionService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
